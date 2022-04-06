@@ -5,7 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- CSS -->
     <link rel="stylesheet" href="front/main.css">
+
+    <!-- JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="/back/swap.js"></script>
 
     <title></title>
 </head>
@@ -26,22 +31,53 @@
         </header>
     </div>
     
-    <div class="textin">
-        <form>
-            <textarea name="input" class="input"></textarea>
-        </form>
-    </div>
 
-    <div class="textin">
-        <form>
-            <textarea name="output" class="output"></textarea>
-        </form>
-    </div>
+    <!-- Main -->
+    <div style="margin-top:8%;">
+
+        <div class="textin">
+            <!-- Ввод -->
+
+            <div class="input">
+                <textarea name="input" class="in"></textarea>
+            </div>
+            
+        </div>
+
+        <div style="text-align: center; margin-top: 3%;">
+        <button>Submit</button> 
+        </div>
         
+        <!-- ввывод -->
+        <div class="textin">
+            
+            <div class="input">
+                <textarea name="output"  disabled=disabled class="in" style="background-color: white;"></textarea>
+            </div>
+                
+        </div>
+
+    </div>
+    
+        
+
+    <!-- Footer -->
     <div>
-        <footer style="text-align: center;" >
-            <h3>Did you like our service?</h3>
-            <p style="font-size: 10px; color: white;">pls give us 100%</p>
+        <footer  style="background-color: rgb(46, 46, 46);">
+            <div style="text-align: center;">
+                <h3 style="color: rgb(255, 255, 255);">Какойто текст</h3>
+                
+
+                <!-- иконки -->
+                <div>
+                    <p>иконка 1</p>
+                    <p>иконка 2</p>  
+                </div>
+                
+                
+                <!-- маленькая просьба -->
+                <p style="font-size: 10px; color: white;">pls give us 100%</p>
+            </div>
         </footer> 
     </div>
 </body>
