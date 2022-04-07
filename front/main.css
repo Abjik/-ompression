@@ -37,6 +37,7 @@ header{
     background: linear-gradient(to right, rgb(0, 255, 225), rgb(255, 0, 242));
     border-radius: 25px;
     padding: 0.2% 0.2%;
+    opacity: 1;
 }
 
 .in{
@@ -107,4 +108,9 @@ footer{
   left: 0;
   width: 100%;
   text-align: center;
+}
+
+.imgin{
+  text-align: center;
+  opacity: 0;
 }

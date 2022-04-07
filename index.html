@@ -27,17 +27,19 @@
             </div>
                 
             <div style="margin-top: 4%;">
-                <button>Text</button>
-                <button>IMG</button> 
+
+                <button onclick="change(this)">Text</button>
+                <button onclick="change(this)">IMG</button> 
+
             </div>                
         </header>
     </div>
 
 
     <!-- text -->
-    <div id="textar">
+    <div>
         <!-- Main -->
-        <div style="margin-top:8%;">
+        <div style="margin-top:8%;" class="textar">
 
             <div class="textin">
                 <!-- Ввод -->
@@ -65,7 +67,9 @@
     </div>
 
     <div class="imgin" id="imgin">
-
+        <form action="/action_page.php">
+            <input type="file" id="img" name="img" accept="image/*">
+        </form>
     </div>
     
     
@@ -73,7 +77,7 @@
 
     <!-- Footer -->
     <div >
-        <footer  style="background-color: rgb(46, 46, 46);">
+        <footer  style="background-color: rgba(0, 0, 0, 0.78);">
             <div style="text-align: center;">
                 <h3 style="color: rgb(255, 255, 255);">Какойто текст</h3>
                 
