@@ -6,7 +6,7 @@ function load() {
 
 function change(element) {
     switch (element.innerHTML) {
-        case "IMG":
+        case "Image":
             $(".textar").animate({
                 opacity: 0
             }, 300);

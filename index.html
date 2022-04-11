@@ -7,10 +7,13 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="front/main.css">
+    <link rel="stylesheet" href="/front/imgstyle.css">
 
     <!-- JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="/back/swap.js"></script>
+    <script src="back/imgscript.js"></script>
+    <script src="https://kit.fontawesome.com/d0546e91ef.js" crossorigin="anonymous"></script>
 
     <title></title>
 </head>
@@ -26,7 +29,7 @@
             <div style="margin-top: 4%;">
 
                 <button onclick="change(this)">Text</button>
-                <button onclick="change(this)">IMG</button> 
+                <button onclick="change(this)">Image</button> 
 
             </div>                
         </header>
@@ -36,12 +39,13 @@
     <!-- text -->
     <div>
         <!-- Main -->
-        <div style="margin-top:8%;" class="textar">
+        <div style="margin-top:5%;" class="textar">
 
             <div class="textin">
                 <!-- Ввод -->
-
+                
                 <div class="input">
+                    <h3 style="color: white;">Input</h3>
                     <textarea name="input" class="in"></textarea>
                 </div>
                 
@@ -55,6 +59,7 @@
             <div class="textin">
                 
                 <div class="input">
+                    <h3 style="color: white;">Output</h3>
                     <textarea name="output"  disabled=disabled class="in" style="background-color: white;"></textarea>
                 </div>
                     
@@ -63,27 +68,52 @@
         </div>
     </div>
 
-    <div class="imgin" id="imgin">
+
+    <!-- Картинки -->
+
+
+    <!-- <div class="imgin" id="imgin">
         <form action="/action_page.php">
             <input type="file" id="myFile" name="filename">
             <input type="submit">
           </form>
+    </div> -->
+
+
+    <div class="imgin">
+       <div class="file-upload">
+        <button class="file-upload-btn" type="button" onclick="$('.file-upload-input').trigger( 'click' )">Add Image</button>
+      
+        <div class="image-upload-wrap">
+          <input class="file-upload-input" type='file' onchange="readURL(this);" accept="image/*" />
+          <div class="drag-text">
+            <h3>Your Image</h3>
+          </div>
+        </div>
+        <div class="file-upload-content">
+          <img class="file-upload-image" src="#" alt="your image" />
+          <div class="image-title-wrap">
+            <button type="button" onclick="removeUpload()" class="remove-image">Remove <span class="image-title">Uploaded Image</span></button>
+          </div>
+        </div>
+      </div> 
     </div>
+    
     
     
         
 
     <!-- Footer -->
-    <div >
+    <div>
         <footer  style="background-color: rgba(0, 0, 0, 0.78);">
             <div style="text-align: center;">
-                <h3 style="color: rgb(255, 255, 255);">Какойто текст</h3>
+                <h3 style="color: rgb(255, 255, 255);">Is our service convenient?</h3>
                 
 
                 <!-- иконки -->
                 <div>
-                    <p>иконка 1</p>
-                    <p>иконка 2</p>  
+                    <i class="fa-solid fa-heart" style="color: white;"></i>
+                    <i class="fa-solid fa-heart-crack" style="color: white;"></i>  
                 </div>
                 
                 

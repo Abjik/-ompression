@@ -31,13 +31,10 @@ header{
 }
 
 .input{
-    /* font-size: 1rem; */
     width: 45%;
     margin-left: 27%;
-    background: linear-gradient(to right, rgb(0, 255, 225), rgb(255, 0, 242));
+    background: linear-gradient(to right, rgba(0, 255, 225, 0.851), rgb(255, 121, 248));
     border-radius: 25px;
-    padding: 0.2% 0.2%;
-    opacity: 1;
 }
 
 .in{
@@ -53,9 +50,8 @@ header{
 .output{
     margin-left: 27%;
     font-size: 1rem;
-    width: 45%;
+    width: 45%;  
     height: 40%;
-    background: linear-gradient(to right, rgb(0, 255, 225), rgb(255, 0, 242));
     border-radius: 23px;
     padding: 1%;
     resize: none;
@@ -108,9 +104,4 @@ footer{
   left: 0;
   width: 100%;
   text-align: center;
-}
-
-.imgin{
-  text-align: center;
-  opacity: 0;
 }
