@@ -1,0 +1,19 @@
+#carroussel{
+  height:100%;
+  background:#212121;
+}
+#carroussel div{
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  background-position:center;
+  background-size:cover;
+  transition:opacity 3s;
+  will-change: opacity;
+}
+#filter-carroussel{
+ z-index:99;
+ background:rgba(0,0,0,0.5);
+}

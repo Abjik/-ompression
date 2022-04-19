@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab|Ubuntu+Condensed');
+@import url('carroussel.css');
+@import url('snackbar.css');
+:root{
+  --theme-color:#1565c0;
+  --secondary-theme-color:#424242;
+}
+body, html{
+  padding:0;
+  margin:0;
+  font-family: 'Roboto Slab', serif;
+  /*text-rendering: optimizeLegibility;*/
+  font-feature-settings:"kern";
+  scroll-behavior:smooth;
+  width:100%;
+  height:100%;
+  user-select: none;
+  -moz-user-select:none;
+}
+.hide{
+  display:none;
+}
+#wrapper-flex-box-contain{
+  width:360px;
+  height:470px;
+  background:rgba(255,255,255,0.9);
+  border-radius:3px;
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate3d(-180px,-235px,0);
+  box-sizing:border-box;
+  overflow:hidden;
+}
+#flex-box-contain{
+  display:flex;
+  flex-direction:row;
+  transition:transform ease 0.5s;
+}
+#flex-box-contain .flex-child{
+  flex-shrink:0;
+  width:360px;
+  height:440px;
+  box-sizing:border-box;
+}
+/* First View */
+.first-flex-child{
+  padding:15px;
+}
+#first-view img{
+  display:block;
+  margin:0 auto;
+}
+#first-view p{
+  color:#212121;
+  font-size:0.85rem;
+}
+.button{
+  display:inline-block;
+  padding:7px;
+  padding-left:12px;
+  padding-right:12px;
+  color:#ffffff;
+  background:var(--secondary-theme-color);
+  border-radius:3px;
+  text-align:center;
+  cursor:pointer;
+}
+.button:hover{
+  transition:background ease 0.3s;
+  background:var(--theme-color);
+}
+.next-button{
+  float:right;
+}
+/* Second View */
+#area-img-selected{
+  height:250px;
+  text-align:center;
+  background:#e0e0e0;
+  background-position:center;
+  background-size:cover;
+}
+#area-img-selected p{
+  font-size:0.8rem;
+  color:#9e9e9e;
+  margin-top:120px;
+  display: inline-block;
+}
+
+/* Style Input type files */
+.inputfile{
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+  outline:none;
+  border:none;
+}
+.inputfile + label:active{
+  border:none!important;
+  outline:none !important;
+ }
+.inputfile + label::before{
+   vertical-align:middle !important;
+   display:inline-block;
+   /*margin-right:5px;*/
+ }
+.inputfile + label::before{
+   /*content:url(../icons/upload.svg);*/
+ }
+ #wrapper-conversion-option{
+   font-size:0.7rem;
+   width:260px;
+   box-sizing:border-box;
+   text-align:center;
+   margin:0 auto;
+   margin-top:15px;
+ }
+ .convertion-choice{
+   cursor:pointer;
+ }
+ .convertion-choice:hover{
+   color:var(--theme-color);
+   text-decoration:underline;
+ }
+.large-button{
+  width:260px;
+  box-sizing:border-box;
+  display:block;
+  margin:0 auto;
+  margin-top:30px;
+}
+
+/* Third View */
+#third-view{
+  padding:15px;
+  color:#212121;
+  text-align:center;
+  box-sizing:border-box;
+}
+#third-view h1{
+  font-size:1.8rem;
+}
+#download-image{
+  text-decoration:none;
+  margin-top:35px;
+}
+#contact-me-text{
+  font-size:.80rem;
+  text-align:center;
+  padding-left:50px;
+  padding-right:50px;
+  box-sizing:border-box;
+  padding-top:20px;
+}
+#footer-third-view{
+  width:260px;
+  margin:0 auto;
+  text-align:center;
+  margin-top:30px;
+}
+#footer-third-view a{
+  text-decoration:none;
+  margin-left:15px;
+  display:inline-block;
+  width:50px;
+}
+#footer-third-view a:first-child{
+  margin-left:0px !important;
+}
+#footer-third-view a:hover, #footer-third-view a:hover > p{
+  color:var(--theme-color)!important;
+}
+#footer-third-view a > p, #footer-third-view #back-to-start{
+  color:#212121;
+  font-size:0.70rem;
+  display:inline-block;
+}
+#footer-third-view #back-to-start{
+  display:block;
+  cursor:pointer;
+  margin-top:15px;
+}
+#footer-third-view #back-to-start:hover{
+  text-decoration:underline;
+}
+/* RoadMap */
+#roadmap{
+  position:absolute;
+  top:50%;
+  left:0;
+  height:300px;
+  width:300px;
+  background:rgba(255,255,255,0.9);
+  border-radius:0px 5px 5px 0px;
+  margin-top:-150px;
+  box-sizing:border-box;
+  transform:translate3d(-300px,0,0);
+  -webkit-transition: transform .5s ease;
+	transition: transform .5s ease;
+}
+#roadmap ul{
+  list-style:none;
+  padding:0 !important;
+  margin:0 !important;
+  box-sizing:border-box;
+}
+#roadmap ul li{
+  font-size:0.8rem;
+  padding:10px;
+  box-sizing:border-box;
+  border-bottom:1px solid #e0e0e0 ;
+}
+#roadmap ul li:last-child{
+  border-bottom:none;
+}
+#button-to-open-roadmap{
+  padding:7px;
+  height:40px;
+  width:100px;
+  background:var(--secondary-theme-color);
+  text-decoration:none;
+  position:absolute;
+  right:-70px; /* Magic Number i need to change this in the future*/
+  top:50%;
+  margin-top:-20px;
+  color:#ffffff;
+  box-sizing:border-box;
+  text-align:center;
+  transform:rotate(270deg);
+  border-radius:0px 0px 5px 5px;
+  cursor:pointer;
+}
+
+/* Some utility class for roadmap component */
+.to-do{
+  color:gray;
+}
+.over{
+  color:#212121;
+}

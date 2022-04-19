@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <meta name="theme-color" id="statusBar" content="#009688" >
+    <meta name="HandheldFriendly" content="true">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="description" content="Tool for compression and change extension name for images">
+    <meta name="author" content="Nguetseng STephane">
+    <meta name="viewport" content="width=device-width, height=device-height, minimum-scale=1.0, initial-scale=1, maximum-scale=3 user-scalable=no">
     <!-- CSS -->
     <link rel="stylesheet" href="front/main.css">
     <link rel="stylesheet" href="/front/imgstyle.css">
+    <link rel="stylesheet" href="/front/css/index.css" media="all">
 
     <!-- JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
@@ -19,7 +23,7 @@
 
     <title></title>
 </head>
-<body>
+<body id="body">
     
     <!-- Header -->
     <div class="head">
@@ -65,7 +69,7 @@
 
     <!-- Картинки -->
 
-    <div class="imgin">
+    <!-- <div class="imgin">
         <div class="file-upload">
             
             <button class="file-upload-btn" type="button" onclick="$('.file-upload-input').trigger( 'click' )">Add Image</button>
@@ -88,6 +92,52 @@
 
             </div>
         </div> 
+    </div> -->
+
+    <div class="imgin">
+        <div id='wrapper-flex-box-contain'>
+
+            <div id='flex-box-contain'>
+        
+                 <div id='first-view' class='flex-child first-flex-child'>
+        
+                  <h3>Elyft Compressor</h3><br />
+        
+                     <span class='button next-button' id='go-to-second-slide'>Start</span>
+                 </div>
+        
+              <div id='second-view' class='flex-child'>
+        
+                  <div id='area-img-selected'>
+                    <p>No overview yet</p>
+                  </div>
+        
+                  <label for='select-file' class="button large-button">Choose an image</label>
+                  <input type='file' class='inputfile' id='select-file' accept="image/png, image/jpeg, image/jpg" />
+                  <span class="button large-button" id='start-compression'>Start compression</span>
+        
+                  <div id='wrapper-conversion-option'>
+                    <span>you can also choose the image format before the compression(In this case the resulting image may have a larger size if you choose png or jpg). Just click on <span id='png' class='convertion-choice' data-extension='png'>Png</span> , <span id='jpg' class='convertion-choice' data-extension='jpg'>Jpg</span> or <span id='jpeg' class='convertion-choice' data-extension='jpeg'>Jpeg</span></span>
+                  </div>
+        
+              </div>
+        
+              <div id="third-view" class="flex-child">
+        
+                <h1>Hooray!!!</h1>
+        
+                <p>The compression has been successfully completed, you can download your new image now!</p>
+                <a href="" class="button large-button" id='download-image' download="">Download your new image</a>
+                <p id="contact-me-text">Do you want to know something about me? you can contact me on...</p>
+                  <div id='footer-third-view'>
+                    <p id='back-to-start'>Back to start</p>
+                  </div>
+        
+                </div>
+        
+              </div>
+        
+            </div>
     </div>
     
     
@@ -115,4 +165,5 @@
     </div>
 
 </body>
+    <script type='module' src='/js/index.js'></script>
 </html>
