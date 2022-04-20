@@ -1,4 +1,4 @@
-export function snackbar(domNodeToInject,image,message, timeToHide, actionMessage=""){
+  export function snackbar(domNodeToInject,image,message, timeToHide, actionMessage=""){
      return new Promise((resolve)=>{
         const constructSnackbar = `<div id="snackbar"><img src="${image}" id="snackbarImg" />${message}<span id="actionSnackbar">${actionMessage}</span></div>`;
         domNodeToInject.insertAdjacentHTML("beforeend", constructSnackbar);
