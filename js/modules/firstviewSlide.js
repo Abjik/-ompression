@@ -1,4 +1,4 @@
-import {animateSlide} from '../helpers/animateSlide.js';
+import {animateSlide} from './helpers/animateSlide.js';
 import {secondViewSlide} from './secondviewSlide.js';
 export function firstViewSlide(){
 	document.getElementById('go-to-second-slide').onclick = ()=>{
