@@ -69,39 +69,14 @@
 
     <!-- Картинки -->
 
-    <!-- <div class="imgin">
-        <div class="file-upload">
-            
-            <button class="file-upload-btn" type="button" onclick="$('.file-upload-input').trigger( 'click' )">Add Image</button>
-      
-                <div class="image-upload-wrap">
-                    <input id="img-input" class="file-upload-input" type='file' onchange="readURL(this);" accept="image/*" />
-
-                        <div class="drag-text">
-                            <h3>Add Your Image</h3>
-                        </div>
-
-                </div>
-
-            <div class="file-upload-content">
-                <img class="file-upload-image" src="#" alt="your image" />
-
-                    <div class="image-title-wrap">
-                        <a id='download-image' download=""><button id="dowload" type="button" onclick="removeUpload()" class="remove-image">Download</button></a>
-                    </div>
-
-            </div>
-        </div> 
-    </div> -->
-
     <div class="imgin">
         <div id='wrapper-flex-box-contain'>
 
             <div id='flex-box-contain'>
         
-                 <div id='first-view' class='flex-child first-flex-child'>
+                 <div id='first-view' class='flex-child first-flex-child' style="text-align: center;">
         
-                  <h3>Elyft Compressor</h3><br />
+                  <h3>Image Compressor</h3><br />
         
                      <span class='button next-button' id='go-to-second-slide'>Start</span>
                  </div>
@@ -115,10 +90,6 @@
                   <label for='select-file' class="button large-button">Choose an image</label>
                   <input type='file' class='inputfile' id='select-file' accept="image/png, image/jpeg, image/jpg" />
                   <span class="button large-button" id='start-compression'>Start compression</span>
-        
-                  <div id='wrapper-conversion-option'>
-                    <span>you can also choose the image format before the compression(In this case the resulting image may have a larger size if you choose png or jpg). Just click on <span id='png' class='convertion-choice' data-extension='png'>Png</span> , <span id='jpg' class='convertion-choice' data-extension='jpg'>Jpg</span> or <span id='jpeg' class='convertion-choice' data-extension='jpeg'>Jpeg</span></span>
-                  </div>
         
               </div>
         

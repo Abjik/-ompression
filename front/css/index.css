@@ -2,13 +2,13 @@
 @import url('carroussel.css');
 @import url('snackbar.css');
 :root{
-  --theme-color:#1565c0;
+  --theme-color:rgb(255, 121, 248);
   --secondary-theme-color:#424242;
 }
 body, html{
   padding:0;
   margin:0;
-  font-family: 'Roboto Slab', serif;
+  /* font-family: 'Roboto Slab', serif; */
   /*text-rendering: optimizeLegibility;*/
   font-feature-settings:"kern";
   scroll-behavior:smooth;

@@ -17,7 +17,7 @@ export function elyftCompression(pictureToCompress,newPictureExtension="jpeg"){
 	  function finish(){
 	     canvas.toBlob((blob)=>{
 	     resolve([blob,newPictureExtension]);
-	     },`image/${newPictureExtension}`, 0.8);
+	     },`image/${newPictureExtension}`, 0.3);
 	 }
 	 ElyftCompress.resample(canvas, w, h, true, finish);
  });
