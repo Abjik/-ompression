@@ -1,5 +1,5 @@
-import {animateSlide} from './helpers/animateSlide.js';
-import {secondViewSlide} from './secondviewSlide.js';
+import {animateSlide} from '../helpers/animateSlide.js';
+import {secondViewSlide} from '../secondviewSlide.js';
 export function firstViewSlide(){
 	document.getElementById('go-to-second-slide').onclick = ()=>{
       const animation = animateSlide(document.getElementById('flex-box-contain'),'-100%');
