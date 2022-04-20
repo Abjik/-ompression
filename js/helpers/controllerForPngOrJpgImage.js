@@ -1,4 +1,4 @@
-import {snackbar} from '/js/widgets/snackbar.js';
+import {snackbar} from '../widgets/snackbar.js';
 export function controllerForPngOrJpgImage(extensionName,domClicked){
   // Something may change here in the near future
   let message;
