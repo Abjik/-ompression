@@ -1,4 +1,4 @@
-import {ElyftCompressor} from 'vendors/elyft-hermite-compressor-core.js';
+import {ElyftCompressor} from './vendors/elyft-hermite-compressor-core.js';
 export function elyftCompression(pictureToCompress,newPictureExtension="jpeg"){
 
 	return new Promise((resolve)=>{
@@ -14,7 +14,7 @@ export function elyftCompression(pictureToCompress,newPictureExtension="jpeg"){
 	  	canvas.height = img_h;
 	  	ctx.clearRect(0,0,img_w,img_h);
 	  	ctx.drawImage(pictureToCompress, 0, 0);
-		  
+
 		// At this point we can choose to resize with the percent number
 	  	const w =  Math.round(img_w * 100 / 100);
 	  	const h =  Math.round(img_h * 100 / 100);
