@@ -1,8 +1,8 @@
-import {animateSlide} from './helpers/animateSlide.js';
-import {drawAnOverview} from './helpers/drawAnOverview.js';
-import {elyftCompression} from './helpers/elyftCompression.js';
-import {snackbar} from './widgets/snackbar.js';
-import {controllerForPngOrJpgImage} from './helpers/controllerForPngOrJpgImage.js';
+import {animateSlide} from '../helpers/animateSlide.js';
+import {drawAnOverview} from '../helpers/drawAnOverview.js';
+import {elyftCompression} from '../helpers/elyftCompression.js';
+import {snackbar} from '../widgets/snackbar.js';
+import {controllerForPngOrJpgImage} from '../helpers/controllerForPngOrJpgImage.js';
 import {thirdViewSlide} from './thirdviewSlide.js';
 export function secondViewSlide(){
 	// When filled the pictureFeatures will be an array
