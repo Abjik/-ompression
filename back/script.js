@@ -49,26 +49,27 @@ function sortPairs(lettersCount){
 	return sortedLettersCount.sort();
 }
 
-function buildTree(tuples){  
-    while(tuples.length > 1){  
-	    leastTwo = [tuples[0][1],tuples[1][1]];   
-	    theRest = tuples.slice(2,tuples.length);    
-	    combFreq = tuples[0][0] + tuples[1][0];   
-	    tuples = theRest;  
-	    end = [combFreq,leastTwo];  
-	    tuples.push(end);    
-	    tuples.sort();    
+function buildTree(pairs){  
+    while(pairs.length > 1){  
+	    leastTwo = [pairs[0][1], pairs[1][1]];  
+	    theRest = pairs.slice(2, pairs.length);  
+	    combFreq = pairs[0][0] + pairs[1][0];   
+	    pairs = theRest;  
+	    end = [combFreq, leastTwo];  
+	    pairs.push(end);    
+	    pairs.sort();    
     }  
 
-    return tuples[0][1];  
+    return pairs[0][1];  
 }
 
-function assignCode(node, pat){  
-    if(typeof(node) == typeof(""))  
-        codes[node] = pat;  
+function assignCode(treeNode, pat){
+	//Esli eto leaf to stopaem process, v drugih slovah base case  
+    if(typeof(treeNode) == typeof(""))  
+        codes[treeNode] = pat;  
     else{  
-        assignCode(node[0], pat + '0');  
-        assignCode(node[1], pat + '1');  
+        assignCode(treeNode[0], pat + '0');  
+        assignCode(treeNode[1], pat + '1');  
    	}  
 }
 
